@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="{% static 'employee_view.css' %}" />
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <h2>All Employee Details</h2>
+    <a href="employee/add/"><button>add employee</button></a>
+    <div id="view1">
+      {% for employee in employees %}
+      <div id="emp1">
+        <p><strong>Employee Name:</strong> {{ employee.employee_name }}</p>
+        <p><strong>Employee Age:</strong> {{ employee.employee_age }}</p>
+        <p>
+          <strong>Employee Address:</strong> {{ employee.employee_address }}
+        </p>
+        {% comment %} <p><strong>Department:</strong> {{ employee.employee_department}}</p>
+        <p><strong>RM:</strong> {{ employee.employee_reporting_manager }}</p>
+        <p><strong>Email:</strong> {{ employee.employee_email }}</p> {% endcomment %}
+        <a href="/employee/view/{{employee.id}}/"
+          >Click here to view all Details</a
+        >
+      </div>
+      {% empty %}
+      <a href="employee/view"><button>click hear<button></a>
+      <p>No employees found.</p>
+      {% endfor %}
+    </div>
+  </body>
+</html>

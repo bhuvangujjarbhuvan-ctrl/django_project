@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(4, 78, 102);
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid black;
+    color: white;
+}
+h2{
+    text-align: center;
+    color:beige;
+}
+#view1{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 80px;
+    padding: 50px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#emp1{
+    background-color: beige;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#emp2{
+    background-color: beige;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#emp3{
+    background-color: beige;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#emp4{
+    background-color: beige;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#emp5{
+    background-color: beige;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#emp6{
+    background-color: beige;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#view1>:hover{
+    background-color: lightcoral;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+}
