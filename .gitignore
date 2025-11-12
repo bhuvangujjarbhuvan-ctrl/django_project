@@ -1,25 +1,45 @@
-# Django
+# =========================
+# Django and Python
+# =========================
 *.log
 *.pot
 *.pyc
+*.pyo
+*.pyd
 __pycache__/
 db.sqlite3
 media/
 staticfiles/
+*.sqlite3
 *.py[cod]
-*.pyo
-*.pyd
 
-# Virtual environment
-env/
+# =========================
+# Virtual Environments
+# =========================
 venv/
+env/
 ENV/
 .venv/
+companyenv/
 
-# IDE files
+# =========================
+# IDE / Editor Settings
+# =========================
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 
-# OS files
+# =========================
+# OS / System Files
+# =========================
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# =========================
+# Archives / Backups
+# =========================
+*.zip
+*.tar.gz
+*.bak
